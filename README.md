@@ -1,3 +1,9 @@
+
+# DO NOT USE!
+## This is a custom version with project specific modifications.
+## Please use the original version at: https://github.com/FormidableLabs/nuka-carousel
+
+
 #nuka-carousel
 
 A Pure ReactJS Carousel Component
