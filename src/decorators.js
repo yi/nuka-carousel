@@ -3,60 +3,60 @@
 import React from 'react';
 
 const DefaultDecorators = [
-  {
-    component: React.createClass({
-      render() {
-        return (
-          <button
-            style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)}
-            onClick={this.handleClick}>PREV</button>
-        )
-      },
-      handleClick(e) {
-        e.preventDefault();
-        this.props.previousSlide();
-      },
-      getButtonStyles(disabled) {
-        return {
-          border: 0,
-          background: 'rgba(0,0,0,0.4)',
-          color: 'white',
-          padding: 10,
-          outline: 0,
-          opacity: disabled ? 0.3 : 1,
-          cursor: 'pointer'
-        }
-      }
-    }),
-    position: 'CenterLeft'
-  },
-  {
-    component: React.createClass({
-      render() {
-        return (
-          <button
-            style={this.getButtonStyles(this.props.currentSlide + this.props.slidesToScroll >= this.props.slideCount && !this.props.wrapAround)}
-            onClick={this.handleClick}>NEXT</button>
-        )
-      },
-      handleClick(e) {
-        e.preventDefault();
-        this.props.nextSlide();
-      },
-      getButtonStyles(disabled) {
-        return {
-          border: 0,
-          background: 'rgba(0,0,0,0.4)',
-          color: 'white',
-          padding: 10,
-          outline: 0,
-          opacity: disabled ? 0.3 : 1,
-          cursor: 'pointer'
-        }
-      }
-    }),
-    position: 'CenterRight'
-  },
+  //{
+    //component: React.createClass({
+      //render() {
+        //return (
+          //<button
+            //style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)}
+            //onClick={this.handleClick}>PREV</button>
+        //)
+      //},
+      //handleClick(e) {
+        //e.preventDefault();
+        //this.props.previousSlide();
+      //},
+      //getButtonStyles(disabled) {
+        //return {
+          //border: 0,
+          //background: 'rgba(0,0,0,0.4)',
+          //color: 'white',
+          //padding: 10,
+          //outline: 0,
+          //opacity: disabled ? 0.3 : 1,
+          //cursor: 'pointer'
+        //}
+      //}
+    //}),
+    //position: 'CenterLeft'
+  //},
+  ////{
+    //component: React.createClass({
+      //render() {
+        //return (
+          //<button
+            //style={this.getButtonStyles(this.props.currentSlide + this.props.slidesToScroll >= this.props.slideCount && !this.props.wrapAround)}
+            //onClick={this.handleClick}>NEXT</button>
+        //)
+      //},
+      //handleClick(e) {
+        //e.preventDefault();
+        //this.props.nextSlide();
+      //},
+      //getButtonStyles(disabled) {
+        //return {
+          //border: 0,
+          //background: 'rgba(0,0,0,0.4)',
+          //color: 'white',
+          //padding: 10,
+          //outline: 0,
+          //opacity: disabled ? 0.3 : 1,
+          //cursor: 'pointer'
+        //}
+      //}
+    //}),
+    //position: 'CenterRight'
+  //},
   {
     component: React.createClass({
       render() {
@@ -91,7 +91,7 @@ const DefaultDecorators = [
         return {
           position: 'relative',
           margin: 0,
-          top: -10,
+          top: 0,
           padding: 0
         }
       },
@@ -105,12 +105,12 @@ const DefaultDecorators = [
         return {
           border: 0,
           background: 'transparent',
-          color: 'black',
+          color: 'white',
           cursor: 'pointer',
-          padding: 10,
+          padding: 4,
           outline: 0,
-          fontSize: 24,
-          opacity: active ? 1 : 0.5
+          fontSize: 20,
+          opacity: active ? 0.9 : 0.5
         }
       }
     }),
